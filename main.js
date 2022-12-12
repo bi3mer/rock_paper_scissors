@@ -155,3 +155,13 @@ $('#paper').click(() => {
 $('#scissors').click(() => {
   run('Scissors');
 });
+
+window.addEventListener('keyup', function (e) {
+  if (e.key === '1') {
+    run('Rock');
+  } else if (e.key === '2') {
+    run('Paper');
+  } else if (e.key === '3') {
+    run('Scissors');
+  }
+}, false);
